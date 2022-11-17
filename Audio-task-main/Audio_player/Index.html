@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="Javascript/Audio-Player.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+
+    <title>Media Player</title>
+</head>
+
+<body>
+
+    <div id = container>
+        <div id ="Now playing">
+            <img id ="now-playing" class ="holder" src="images/Vinyl.png">
+        </div>
+        <div id="Player">
+            <img id='play-pause-button' src="images/play.svg">
+            <input id="seek-bar" type="range" min="0" value="0" disabled />
+            <h4 id="current-time">0:00</h4>
+            <h4 id="divider">/</h4>
+            <h4 id="total-time">0:00</h4>
+            <input id="volume-slider" type="range" min="0" max="100" value="100"></input>
+        </div>
+
+        <div id = "song-selection">
+            <div id="button1">
+                <img class="holder" src = "images/ThisFeeling.png">
+                <h4>This feeling</h4>
+            </div>
+            <div id="button2">
+                <img class="holder" src = "images/Starshopping.png">
+                <h4>Star-shopping</h4>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(29, 29, 29);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container{
+max-width: 1200px;
+padding: 20px;
+
+margin-bottom: 10vh;
+margin-right: 4vh;
+margin-left: 4vh;
+
+background-color: rgb(49, 45, 107);
+box-shadow: 10px 10px 20px rgba(46, 46, 46, 0.377) inset; 
+}
+
+
+
+h1 {
+    font-family: 'Playball', cursive;
+    color: rgb(51, 65, 141);
+    font-weight: 100;
+}
+
+h4 {
+    font-family: 'Playball', cursive;
+    font-weight: 100;
+    color: rgb(179, 179, 179);
+    padding-bottom: 3px;
+    user-select: none;
+}
+
+
+
+#Player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 450px;
+    height: 50px;
+    background-color: rgb(63, 58, 78);
+    border-radius: 20px;
+}
+
+
+
+#play-pause-button {
+    height: 20px;
+    width: 20px;
+    /* changing the cursor on the play button to indicate its interactivity */
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#current-time {
+    width: 45px;
+}
+
+#total-time {
+    width: 45px;
+}
+
+#seek-bar {
+    width: 150px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+#volume-slider{
+    width: 100px;
+}
+
+#divider {
+    padding-left: 5px;
+    padding-right: 10px;
+}
+#song-selection{
+    margin: 20px;
+    position:relative ;
+}
+
+.holder{
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+#now-playing{
+    width: 500px;
+    height: 500px;
+}
+/* Setting web kit to none so that appearance can be adjusted by me */
+input[type="range"]{
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+
+}
+/* slider colour */
+input[type="range"]::-webkit-slider-runnable-track{
+background: rgb(148, 8, 167);
+}
+/* progression colour */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    margin-top: 0px;
+    background-color: #454c58;
+    height: 2rem;
+    width: 1rem;    
+ }
